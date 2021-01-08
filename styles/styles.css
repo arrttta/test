@@ -1,0 +1,131 @@
+* {
+    background-color: silver;
+    font-size: 12pt;
+}
+
+.headlines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "head1 head1"
+    "head2 head3";
+    justify-items: center;
+}
+
+h2 {
+    grid-area: head2;
+}
+
+h3 {
+    grid-area: head3;
+}
+
+.head1 {
+    display: flex;
+    border: 2px dotted violet;
+    height: 50px;
+    width: 200px;   
+    grid-area: head1;
+    justify-content: center;
+}
+
+.buttongrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fizz, .buzz, .fizzbuzz, .number {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+    border: 2px dotted violet;
+    
+}
+
+.menu {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 100px 100px 50px;
+    grid-template-areas: "start start reset reset"
+    "minmax minmax minnumb maxnumb"
+    "fizzlab fizznumb buzzlab buzznumb"
+    "custom custom custom custom";
+    justify-items: center;
+}
+
+#start {
+    display: block;
+    height: 40px;
+    width: 200px;
+    grid-area: start;
+}
+
+
+#reset {
+    grid-area: reset;
+    height: 40px;
+    width: 200px;
+}
+
+#minmaxinsert {
+    grid-area: minmax;
+}
+
+#numberMin {
+    grid-area: minnumb;
+    height: 40px;
+    width: 100px;
+}
+
+#numberMax {
+    grid-area: maxnumb;
+    height: 40px;
+    width: 100px;
+}
+
+#fizznumber {
+    grid-area: fizznumb;
+    height: 40px;
+    width: 100px;
+}
+
+#fizznumberlabel {
+    grid-area: fizzlab;
+}
+
+#buzznumber {
+    grid-area: buzznumb;
+    height: 40px;
+    width: 100px;
+}
+
+#buzznumberlabel {
+    grid-area: buzzlab;
+}
+
+#custom {
+    grid-area: custom;
+    height: 40px;
+    width: 300px;
+}
+
+
+/* 
+@media (min-width: 576px) {
+    .buttongrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .buttongrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+} */
